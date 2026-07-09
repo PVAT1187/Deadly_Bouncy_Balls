@@ -7,9 +7,6 @@
     <Filter Include="Entities">
       <UniqueIdentifier>{30a3024e-ecb0-4fdd-8511-477ef1363f1c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Math">
-      <UniqueIdentifier>{7e642652-24f2-40dd-aa31-229393b2e829}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Overlays">
       <UniqueIdentifier>{431c0cf4-a4b5-4f9c-8806-b33254f62f04}</UniqueIdentifier>
     </Filter>
@@ -19,107 +16,341 @@
     <Filter Include="UI">
       <UniqueIdentifier>{32de6cf6-db3a-4d7e-959e-8a0244790b1e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{d41cbce8-9b88-492a-bfb6-4345a65a113c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{1c5c72ee-e134-4764-b4fe-7344fe1286a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Player">
+      <UniqueIdentifier>{43a7f531-345b-42f7-b276-915956a03d80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Enemies">
+      <UniqueIdentifier>{8f5effa5-1485-4cb2-9067-893f0ea1fa1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Projectiles">
+      <UniqueIdentifier>{16ce9182-ac93-4047-b25b-27f6a1ac881a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Buttons">
+      <UniqueIdentifier>{c10a251e-5b95-4b74-97e1-397971b0d347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Math">
+      <UniqueIdentifier>{fc772a7b-11dc-40b1-a839-baed6b65b3e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Physics">
+      <UniqueIdentifier>{a9bb7b8a-9b66-4960-ad80-be7d19d97dd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\UI">
+      <UniqueIdentifier>{b7c5a0b2-d1d2-437d-a7ea-ad602d68d528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Overlays\PauseMenu">
+      <UniqueIdentifier>{12f51b10-ac0a-4008-8d81-c6c08beeec17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Screens\GameStart">
+      <UniqueIdentifier>{df5d57e1-49cb-4c6a-afe4-d10fd3fbabc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Screens\GamePlay">
+      <UniqueIdentifier>{5484d284-0d87-41a4-9ee5-c7e351cec9bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Screens\GameOver">
+      <UniqueIdentifier>{ef65ead9-e47e-4fd1-8489-e60fbd1184a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\App">
+      <UniqueIdentifier>{b420bb40-31de-412e-abfe-1d61b5325104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Systems">
+      <UniqueIdentifier>{addd45f4-c110-4d8b-bcea-230c7e8e4e58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Systems\Aiming">
+      <UniqueIdentifier>{94f6a425-fe71-42d1-8eca-d4fd33dfb781}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Systems\CollisionDetection">
+      <UniqueIdentifier>{423da9d2-7177-4e5d-8df6-27ffdd720c57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Systems\Combat">
+      <UniqueIdentifier>{336b8013-d511-407d-9c12-8e2f6f310c77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Systems\Shooting">
+      <UniqueIdentifier>{d73af4f9-224a-4b47-9aba-8dff93fcb79e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Assets">
+      <UniqueIdentifier>{747f9561-8311-4728-ab49-ed78a64d9792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Screens\Tutorial">
+      <UniqueIdentifier>{273c94dd-988e-4915-8e1e-67f3f305c95b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Overlays\Tutorial">
+      <UniqueIdentifier>{e09ee758-7474-4307-97e2-5088af3fd68d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Animation">
+      <UniqueIdentifier>{ce11ebc9-d24c-418f-9a98-88a32db0928b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Systems\Boundary">
+      <UniqueIdentifier>{ca91dbb7-abf5-4113-8e55-e92d23fcc3b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\World">
+      <UniqueIdentifier>{fd86ad4c-57f0-411b-94f7-42acf2e9bc54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\World\GameWorld">
+      <UniqueIdentifier>{a4c23d92-fb6f-4e10-a683-feb313ad27b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Rendering">
+      <UniqueIdentifier>{14c0eb04-5be4-4b08-8a8c-538f136f26d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Random">
+      <UniqueIdentifier>{301e4c2a-fe27-4356-a19c-e06d25393fcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{5405c672-a1e3-46e5-9462-3f3b1d06e4a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Systems\Movement">
+      <UniqueIdentifier>{7e00b962-8242-448b-8a12-556d3a93a413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Input">
+      <UniqueIdentifier>{da0b0bff-1551-4119-846d-2d5de68a9819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Input\InputCollector">
+      <UniqueIdentifier>{5537a947-0028-4af2-a14d-24e7ba59d4b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Events">
+      <UniqueIdentifier>{208cd7e2-a4bf-4eef-bcae-9001e933a8a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Events\EventBus">
+      <UniqueIdentifier>{724c3460-2595-4dfd-b400-2584cc8cf5f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Collectibles">
+      <UniqueIdentifier>{dcf58ce1-7bf4-4e1c-8649-fcd2747adb15}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Core\Game.cpp">
-      <Filter>Core</Filter>
-    </ClCompile>
     <ClCompile Include="src\Core\main.cpp">
       <Filter>Core</Filter>
     </ClCompile>
-    <ClCompile Include="src\Entities\Ball.cpp">
-      <Filter>Entities</Filter>
+    <ClCompile Include="src\Entities\Player\Player.cpp">
+      <Filter>Entities\Player</Filter>
     </ClCompile>
-    <ClCompile Include="src\Entities\BallManager.cpp">
-      <Filter>Entities</Filter>
+    <ClCompile Include="src\Entities\Enemies\Ball.cpp">
+      <Filter>Entities\Enemies</Filter>
     </ClCompile>
-    <ClCompile Include="src\Entities\Player.cpp">
-      <Filter>Entities</Filter>
+    <ClCompile Include="src\Entities\Enemies\BallManager.cpp">
+      <Filter>Entities\Enemies</Filter>
     </ClCompile>
-    <ClCompile Include="src\Math\MathUtils.cpp">
-      <Filter>Math</Filter>
+    <ClCompile Include="src\Entities\Projectiles\Bullet.cpp">
+      <Filter>Entities\Projectiles</Filter>
     </ClCompile>
-    <ClCompile Include="src\Math\PhysicsUtils.cpp">
-      <Filter>Math</Filter>
+    <ClCompile Include="src\UI\Buttons\TextButton.cpp">
+      <Filter>UI\Buttons</Filter>
     </ClCompile>
-    <ClCompile Include="src\Overlays\InstructionOverlay.cpp">
-      <Filter>Overlays</Filter>
+    <ClCompile Include="src\Utilities\Math\MathUtils.cpp">
+      <Filter>Utilities\Math</Filter>
     </ClCompile>
-    <ClCompile Include="src\Overlays\PauseMenuOverlay.cpp">
-      <Filter>Overlays</Filter>
+    <ClCompile Include="src\Utilities\Physics\PhysicsUtils.cpp">
+      <Filter>Utilities\Physics</Filter>
     </ClCompile>
-    <ClCompile Include="src\Screens\GameDemoScreen.cpp">
-      <Filter>Screens</Filter>
+    <ClCompile Include="src\Utilities\UI\UIUtils.cpp">
+      <Filter>Utilities\UI</Filter>
     </ClCompile>
-    <ClCompile Include="src\Screens\GameOverScreen.cpp">
-      <Filter>Screens</Filter>
+    <ClCompile Include="src\Overlays\PauseMenu\PauseMenuOverlay.cpp">
+      <Filter>Overlays\PauseMenu</Filter>
     </ClCompile>
-    <ClCompile Include="src\Screens\GamePlayScreen.cpp">
-      <Filter>Screens</Filter>
+    <ClCompile Include="src\Screens\GameStart\GameStartScreen.cpp">
+      <Filter>Screens\GameStart</Filter>
     </ClCompile>
-    <ClCompile Include="src\Screens\GameStartScreen.cpp">
-      <Filter>Screens</Filter>
+    <ClCompile Include="src\Screens\GamePlay\GamePlayScreen.cpp">
+      <Filter>Screens\GamePlay</Filter>
     </ClCompile>
-    <ClCompile Include="src\UI\TextButton.cpp">
-      <Filter>UI</Filter>
+    <ClCompile Include="src\Screens\GameOver\GameOverScreen.cpp">
+      <Filter>Screens\GameOver</Filter>
     </ClCompile>
-    <ClCompile Include="src\UI\UIUtils.cpp">
-      <Filter>UI</Filter>
+    <ClCompile Include="src\Core\App\Game.cpp">
+      <Filter>Core\App</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Systems\Aiming\AimingSystem.cpp">
+      <Filter>Core\Systems\Aiming</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Systems\CollisionDetection\CollisionDetectionSystem.cpp">
+      <Filter>Core\Systems\CollisionDetection</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Systems\Combat\CombatSystem.cpp">
+      <Filter>Core\Systems\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Systems\Shooting\ShootingSystem.cpp">
+      <Filter>Core\Systems\Shooting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Assets\GameAssets.cpp">
+      <Filter>Core\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Screens\Tutorial\TutorialScreen.cpp">
+      <Filter>Screens\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Overlays\Tutorial\TutorialOverlay.cpp">
+      <Filter>Overlays\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utilities\Animation\AnimatedSprite.cpp">
+      <Filter>Utilities\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Rendering\Renderer.cpp">
+      <Filter>Core\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\World\GameWorld\GameWorld.cpp">
+      <Filter>Core\World\GameWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Systems\Boundary\BoundarySystem.cpp">
+      <Filter>Core\Systems\Boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utilities\Random\RandomUtils.cpp">
+      <Filter>Utilities\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entities\Projectiles\BulletManager.cpp">
+      <Filter>Entities\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Systems\Movement\MovementSystem.cpp">
+      <Filter>Core\Systems\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Input\InputCollector\InputCollector.cpp">
+      <Filter>Core\Input\InputCollector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Events\EventBus\EventBus.cpp">
+      <Filter>Core\Events\EventBus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entities\Collectibles\Star.cpp">
+      <Filter>Entities\Collectibles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entities\Collectibles\StarManager.cpp">
+      <Filter>Entities\Collectibles</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Core\Game.h">
-      <Filter>Core</Filter>
+    <ClInclude Include="src\Entities\Player\Player.h">
+      <Filter>Entities\Player</Filter>
     </ClInclude>
-    <ClInclude Include="src\Entities\Ball.h">
-      <Filter>Entities</Filter>
+    <ClInclude Include="src\Entities\Enemies\Ball.h">
+      <Filter>Entities\Enemies</Filter>
     </ClInclude>
-    <ClInclude Include="src\Entities\BallManager.h">
-      <Filter>Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Entities\Player.h">
-      <Filter>Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Math\MathUtils.h">
-      <Filter>Math</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Math\PhysicsUtils.h">
-      <Filter>Math</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Overlays\InstructionOverlay.h">
-      <Filter>Overlays</Filter>
+    <ClInclude Include="src\Entities\Enemies\BallManager.h">
+      <Filter>Entities\Enemies</Filter>
     </ClInclude>
     <ClInclude Include="src\Overlays\Overlay.h">
       <Filter>Overlays</Filter>
     </ClInclude>
-    <ClInclude Include="src\Overlays\PauseMenuOverlay.h">
-      <Filter>Overlays</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Screens\GameDemoScreen.h">
-      <Filter>Screens</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Screens\GameOverScreen.h">
-      <Filter>Screens</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Screens\GamePlayScreen.h">
-      <Filter>Screens</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Screens\GameStartScreen.h">
-      <Filter>Screens</Filter>
-    </ClInclude>
     <ClInclude Include="src\Screens\Screen.h">
       <Filter>Screens</Filter>
     </ClInclude>
-    <ClInclude Include="src\UI\TextButton.h">
-      <Filter>UI</Filter>
+    <ClInclude Include="src\UI\Buttons\TextButton.h">
+      <Filter>UI\Buttons</Filter>
     </ClInclude>
-    <ClInclude Include="src\UI\UIUtils.h">
-      <Filter>UI</Filter>
+    <ClInclude Include="src\Utilities\Math\MathUtils.h">
+      <Filter>Utilities\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utilities\Physics\PhysicsUtils.h">
+      <Filter>Utilities\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utilities\UI\UIUtils.h">
+      <Filter>Utilities\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Overlays\PauseMenu\PauseMenuOverlay.h">
+      <Filter>Overlays\PauseMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screens\GameStart\GameStartScreen.h">
+      <Filter>Screens\GameStart</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screens\GamePlay\GamePlayScreen.h">
+      <Filter>Screens\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screens\GameOver\GameOverScreen.h">
+      <Filter>Screens\GameOver</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\App\Game.h">
+      <Filter>Core\App</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entities\Projectiles\Bullet.h">
+      <Filter>Entities\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Systems\Aiming\AimingSystem.h">
+      <Filter>Core\Systems\Aiming</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Systems\CollisionDetection\CollisionDetectionSystem.h">
+      <Filter>Core\Systems\CollisionDetection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Systems\Combat\CombatSystem.h">
+      <Filter>Core\Systems\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Systems\Shooting\ShootingSystem.h">
+      <Filter>Core\Systems\Shooting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Assets\GameAssets.h">
+      <Filter>Core\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screens\Tutorial\TutorialScreen.h">
+      <Filter>Screens\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Overlays\Tutorial\TutorialOverlay.h">
+      <Filter>Overlays\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utilities\Animation\AnimatedSprite.h">
+      <Filter>Utilities\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Rendering\Renderer.h">
+      <Filter>Core\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Systems\Boundary\BoundarySystem.h">
+      <Filter>Core\Systems\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\World\GameWorld\GameWorld.h">
+      <Filter>Core\World\GameWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\World\WorldBounds.h">
+      <Filter>Core\World</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utilities\Random\RandomUtils.h">
+      <Filter>Utilities\Random</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Config\GameConfig.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\AimingComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\MovementComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\ShootingComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entities\Projectiles\BulletManager.h">
+      <Filter>Entities\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Systems\Movement\MovementSystem.h">
+      <Filter>Core\Systems\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Input\InputCollector\InputCollector.h">
+      <Filter>Core\Input\InputCollector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Input\Input.h">
+      <Filter>Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\GameEvents.h">
+      <Filter>Core\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\EventBus\EventBus.h">
+      <Filter>Core\Events\EventBus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\EventBus\QueuedEvent.h">
+      <Filter>Core\Events\EventBus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entities\Collectibles\Star.h">
+      <Filter>Entities\Collectibles</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entities\Collectibles\StarManager.h">
+      <Filter>Entities\Collectibles</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Game.inl">
-      <Filter>Core</Filter>
+    <None Include="src\Core\App\Game.inl">
+      <Filter>Core\App</Filter>
+    </None>
+    <None Include="src\Core\Events\EventBus\EventBus.inl">
+      <Filter>Core\Events\EventBus</Filter>
     </None>
   </ItemGroup>
 </Project>

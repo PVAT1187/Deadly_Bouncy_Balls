@@ -1,34 +1,41 @@
 #ifndef OVERLAY_H
 #define OVERLAY_H
 
-#include <SFML/Graphics.hpp>
+#include "Config/GameConfig.h"
+#include "Core/Input/InputCollector/InputCollector.h"
 
-constexpr uint8_t DIM_ALPHA = 150;
+#include <SFML/Graphics/RectangleShape.hpp>
 
 class Game;
+class GameAssets;
 
 class Overlay
 {
 	public:
 		virtual void handleEvent(const sf::Event& event) = 0;
-		virtual void update() = 0;
-		virtual void render(sf::RenderWindow& window) = 0;
+		virtual void update(float deltaTime, 
+			const Input& Input) = 0;
+		virtual void render() = 0;
 
 		virtual ~Overlay() = default;
 
 	protected:
 		Game& game;
-		sf::RenderWindow& window;
-
 		sf::RectangleShape dimBackground;
 
-		Overlay(Game& game, sf::RenderWindow& window) :
-			game(game), window(window) {}
+		Overlay(Game& game) : game(game) {}
 
 		void initDimBackground()
 		{
-			dimBackground.setSize(static_cast<sf::Vector2f>(window.getSize()));
-			dimBackground.setFillColor(sf::Color(0, 0, 0, DIM_ALPHA));
+			auto& renderer = game.getRenderer();
+			
+			dimBackground.setSize(
+				static_cast<sf::Vector2f>(renderer.getWindowSize())
+			);
+
+			dimBackground.setFillColor(
+				sf::Color(0, 0, 0, Config::UI::DIM_ALPHA)
+			);
 		}
 };
 
