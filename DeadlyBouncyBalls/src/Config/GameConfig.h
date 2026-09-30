@@ -142,6 +142,8 @@ namespace Config
 	{
 		constexpr float COLLISION_SEPARATION_RATIO = 0.5f;
 	}
+
+	constexpr float INPUT_GRACE_PERIOD = 0.1f;
 }
 
 #endif // !GAME_CONFIG_H

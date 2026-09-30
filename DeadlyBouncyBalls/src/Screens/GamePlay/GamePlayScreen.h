@@ -25,6 +25,8 @@ class GamePlayScreen : public Screen
 
 		std::unique_ptr<PauseMenuOverlay> pauseOverlay;
 
+		float inputGracePeriod;
+
 		void initText();
 		void updateText(float survivalTime, int score);	
 };

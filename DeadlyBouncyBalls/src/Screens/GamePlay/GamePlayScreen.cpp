@@ -9,7 +9,8 @@ GamePlayScreen::GamePlayScreen(Game& game) :
 	gameWorld(game.getAssets(), game.getRenderer().getWindowSize()),
 	survivalTimeText(sf::Text(game.getAssets().getFont(), "", Config::UI::BODY_TEXT_SIZE)),
 	scoreText(sf::Text(game.getAssets().getFont(), "", Config::UI::BODY_TEXT_SIZE)),
-	survivalClock()
+	survivalClock(),
+	inputGracePeriod(Config::INPUT_GRACE_PERIOD)
 {
 	game.getRenderer().showCursor(false);
 	initText();
@@ -68,6 +69,12 @@ void GamePlayScreen::update(
 	int score = gameWorld.getScore();
 
 	updateText(survivalTime, score);
+
+	if (inputGracePeriod > 0)
+	{
+		inputGracePeriod -= deltaTime;
+		return;
+	}
 	
 	gameWorld.update(deltaTime, Input);
 	if (gameWorld.isGameOver())
