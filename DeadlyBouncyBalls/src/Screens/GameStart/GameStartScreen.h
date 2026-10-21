@@ -3,6 +3,7 @@
 
 #include "Screens/Screen.h"
 #include "UI/Buttons/TextButton.h"
+#include "UI/Background/AnimatedBackground.h"
 
 class GameStartScreen : public Screen
 {
@@ -12,9 +13,11 @@ class GameStartScreen : public Screen
 		void handleEvent(const sf::Event& event) override;
 		void update(float deltaTime,
 			const Input& Input) override;
-		void render() override;
+		void draw() override;
 
 	private:
+		AnimatedBackground animatedBackground;
+
 		sf::Text gameTitleText;
 
 		TextButton playButton;

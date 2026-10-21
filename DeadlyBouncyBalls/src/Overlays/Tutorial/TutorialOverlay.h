@@ -12,7 +12,7 @@ class TutorialOverlay : public Overlay
 		void handleEvent(const sf::Event& event) override;
 		void update(float deltaTime,
 			const Input& Input) override;
-		void render() override;
+		void draw() override;
 
 		bool isFinished() const;
 

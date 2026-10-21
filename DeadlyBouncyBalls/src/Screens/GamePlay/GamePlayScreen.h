@@ -13,7 +13,7 @@ class GamePlayScreen : public Screen
 		void handleEvent(const sf::Event& event) override;
 		void update(float deltaTime,
 			const Input& Input) override;
-		void render() override;
+		void draw() override;
 
 	private:
 		GameWorld gameWorld;

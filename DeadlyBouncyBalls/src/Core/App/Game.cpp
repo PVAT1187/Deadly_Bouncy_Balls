@@ -31,7 +31,7 @@ void Game::run()
 		currentScreen->update(deltaTime, input);
 
 		renderer.clear();
-		currentScreen->render();
+		currentScreen->draw();
 		renderer.display();
 	}
 }

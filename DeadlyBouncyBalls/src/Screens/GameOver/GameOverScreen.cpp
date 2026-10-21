@@ -47,7 +47,7 @@ void GameOverScreen::update(float deltaTime,
 	mainMenuButton.update(Input.mousePosition);
 }
 
-void GameOverScreen::render()
+void GameOverScreen::draw()
 {
 	auto& renderer = game.getRenderer();
 	

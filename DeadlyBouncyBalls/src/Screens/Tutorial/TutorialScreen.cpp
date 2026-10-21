@@ -32,10 +32,10 @@ void TutorialScreen::update(
 		tutorialOverlay->update(deltaTime, Input);
 }
 
-void TutorialScreen::render()
+void TutorialScreen::draw()
 {
 	auto& renderer = game.getRenderer();
 
 	if (tutorialOverlay)
-		tutorialOverlay->render();
+		tutorialOverlay->draw();
 }

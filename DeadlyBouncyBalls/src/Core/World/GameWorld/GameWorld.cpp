@@ -77,7 +77,7 @@ void GameWorld::update(
 	processPendingStarHits();
 }
 
-void GameWorld::render(Renderer& renderer) const
+void GameWorld::draw(Renderer& renderer) const
 {
 	player.draw(renderer);
 	starManager.draw(renderer);

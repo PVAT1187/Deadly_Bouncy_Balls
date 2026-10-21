@@ -84,16 +84,16 @@ void GamePlayScreen::update(
 	}
 }
 
-void GamePlayScreen::render()
+void GamePlayScreen::draw()
 {
 	auto& renderer = game.getRenderer();
 	
-	gameWorld.render(renderer);
+	gameWorld.draw(renderer);
 	renderer.draw(survivalTimeText);
 	renderer.draw(scoreText);
 
 	if (pauseOverlay)
-		pauseOverlay->render();
+		pauseOverlay->draw();
 }
 
 void GamePlayScreen::initText()

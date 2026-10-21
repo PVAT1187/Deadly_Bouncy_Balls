@@ -45,6 +45,7 @@
     <ClCompile Include="src\Screens\GamePlay\GamePlayScreen.cpp" />
     <ClCompile Include="src\Screens\GameStart\GameStartScreen.cpp" />
     <ClCompile Include="src\Screens\Tutorial\TutorialScreen.cpp" />
+    <ClCompile Include="src\UI\Background\AnimatedBackground.cpp" />
     <ClCompile Include="src\UI\Buttons\TextButton.cpp" />
     <ClCompile Include="src\Utilities\Animation\AnimatedSprite.cpp" />
     <ClCompile Include="src\Utilities\Math\MathUtils.cpp" />
@@ -88,6 +89,7 @@
     <ClInclude Include="src\Screens\GameStart\GameStartScreen.h" />
     <ClInclude Include="src\Screens\Screen.h" />
     <ClInclude Include="src\Screens\Tutorial\TutorialScreen.h" />
+    <ClInclude Include="src\UI\Background\AnimatedBackground.h" />
     <ClInclude Include="src\UI\Buttons\TextButton.h" />
     <ClInclude Include="src\Utilities\Animation\AnimatedSprite.h" />
     <ClInclude Include="src\Utilities\Math\MathUtils.h" />

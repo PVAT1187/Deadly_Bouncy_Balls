@@ -118,8 +118,11 @@
     <Filter Include="Entities\Collectibles">
       <UniqueIdentifier>{dcf58ce1-7bf4-4e1c-8649-fcd2747adb15}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Entities\Enemy">
+    <Filter Include="Entities\Enemies">
       <UniqueIdentifier>{8f5effa5-1485-4cb2-9067-893f0ea1fa1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Background">
+      <UniqueIdentifier>{5aeb440a-f400-4f7d-bb43-79a65e591b0c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -130,10 +133,10 @@
       <Filter>Entities\Player</Filter>
     </ClCompile>
     <ClCompile Include="src\Entities\Enemies\Ball.cpp">
-      <Filter>Entities\Enemy</Filter>
+      <Filter>Entities\Enemies</Filter>
     </ClCompile>
     <ClCompile Include="src\Entities\Enemies\BallManager.cpp">
-      <Filter>Entities\Enemy</Filter>
+      <Filter>Entities\Enemies</Filter>
     </ClCompile>
     <ClCompile Include="src\Entities\Projectiles\Bullet.cpp">
       <Filter>Entities\Projectiles</Filter>
@@ -219,16 +222,19 @@
     <ClCompile Include="src\Entities\Collectibles\StarManager.cpp">
       <Filter>Entities\Collectibles</Filter>
     </ClCompile>
+    <ClCompile Include="src\UI\Background\AnimatedBackground.cpp">
+      <Filter>UI\Background</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Entities\Player\Player.h">
       <Filter>Entities\Player</Filter>
     </ClInclude>
     <ClInclude Include="src\Entities\Enemies\Ball.h">
-      <Filter>Entities\Enemy</Filter>
+      <Filter>Entities\Enemies</Filter>
     </ClInclude>
     <ClInclude Include="src\Entities\Enemies\BallManager.h">
-      <Filter>Entities\Enemy</Filter>
+      <Filter>Entities\Enemies</Filter>
     </ClInclude>
     <ClInclude Include="src\Overlays\Overlay.h">
       <Filter>Overlays</Filter>
@@ -343,6 +349,9 @@
     </ClInclude>
     <ClInclude Include="src\Entities\Collectibles\StarManager.h">
       <Filter>Entities\Collectibles</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Background\AnimatedBackground.h">
+      <Filter>UI\Background</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

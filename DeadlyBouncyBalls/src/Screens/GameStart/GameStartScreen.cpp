@@ -7,6 +7,7 @@
 
 GameStartScreen::GameStartScreen(Game& game) :
 	Screen(game),
+	animatedBackground(game.getRenderer().getWindowSize()),
 	gameTitleText(sf::Text(game.getAssets().getFont(), "DEADLY BOUNCY BALLS", Config::UI::TITLE_TEXT_SIZE)),
 	playButton("PLAY", game.getAssets().getFont(), Config::Button::BUTTON_SIZE, { 0, 0 }),
 	quitButton("QUIT", game.getAssets().getFont(), Config::Button::BUTTON_SIZE, { 0, 0 })
@@ -36,14 +37,16 @@ void GameStartScreen::update(
 	float deltaTime,
 	const Input& Input)
 {
+	animatedBackground.update(deltaTime);
 	playButton.update(Input.mousePosition);
 	quitButton.update(Input.mousePosition);
 }
 
-void GameStartScreen::render()
+void GameStartScreen::draw()
 {
 	auto& renderer = game.getRenderer();
 
+	animatedBackground.draw(renderer);
 	renderer.draw(gameTitleText);
 	playButton.draw(renderer);
 	quitButton.draw(renderer);

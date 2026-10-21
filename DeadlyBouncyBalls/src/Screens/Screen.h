@@ -13,7 +13,7 @@ class Screen
 		virtual void handleEvent(const sf::Event& event) = 0;
 		virtual void update(float deltaTime, 
 			const Input& Input) = 0;
-		virtual void render() = 0;
+		virtual void draw() = 0;
 
 		virtual ~Screen() = default;
 

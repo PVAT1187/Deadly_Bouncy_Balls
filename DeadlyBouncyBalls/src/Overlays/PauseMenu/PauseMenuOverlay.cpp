@@ -41,7 +41,7 @@ void PauseMenuOverlay::update(
 	mainMenuButton.update(Input.mousePosition);
 }
 
-void PauseMenuOverlay::render()
+void PauseMenuOverlay::draw()
 {
 	auto& renderer = game.getRenderer();
 	

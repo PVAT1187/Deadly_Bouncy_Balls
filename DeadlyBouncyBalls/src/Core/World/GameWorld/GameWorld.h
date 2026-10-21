@@ -24,7 +24,7 @@ class GameWorld
 
 		void update(float deltaTime,
 			const Input& Input);
-		void render(Renderer& renderer) const;
+		void draw(Renderer& renderer) const;
 
 		int getScore() const;
 

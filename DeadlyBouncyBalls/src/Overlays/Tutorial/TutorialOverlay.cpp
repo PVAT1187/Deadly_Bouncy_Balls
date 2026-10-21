@@ -36,7 +36,7 @@ void TutorialOverlay::update(
 	continueButton.update(Input.mousePosition);
 }
 
-void TutorialOverlay::render()
+void TutorialOverlay::draw()
 {
 	auto& renderer = game.getRenderer();
 	
