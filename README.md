@@ -1,5 +1,5 @@
-# Deadly Bouncy Balls (C++ / SFML)
+# Deadly Bouncy Balls (C++ / SFML 3.x)
 
-A fast-paced 2D arcade game where the player dodges and shoots bouncing balls that move, collide, and split into smaller, faster balls over time. 
+A fast-paced 2D arcade-styled game. 
 
-- Play Deadly Bouncy Balls on: (itch.io link, will attach later)
+- Play Deadly Bouncy Balls on: https://pvat1187.itch.io/deadly-bouncy-balls
