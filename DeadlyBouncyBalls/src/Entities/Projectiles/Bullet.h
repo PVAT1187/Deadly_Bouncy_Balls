@@ -1,7 +1,8 @@
 #ifndef BULLET_H
 #define BULLET_H
 
-#include <SFML/Graphics/Sprite.hpp>
+#include "Utilities/Animation/AnimatedSprite.h"
+
 #include <SFML/Graphics/Texture.hpp>
 #include <SFML/Graphics/Rect.hpp>
 #include <SFML/System/Vector2.hpp>
@@ -25,7 +26,7 @@ class Bullet
 		bool isExpired() const;
 
 	private:
-		sf::Sprite bullet;
+		AnimatedSprite bullet;
 
 		sf::Vector2f velocity;
 		sf::Vector2f position;

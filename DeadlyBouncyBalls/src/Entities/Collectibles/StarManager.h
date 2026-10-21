@@ -3,6 +3,7 @@
 
 #include "Entities/Collectibles/Star.h"
 
+#include <SFML/Graphics/Texture.hpp>
 #include <vector>
 
 class Renderer;
@@ -12,10 +13,9 @@ class WorldBounds;
 class StarManager
 {
 	public:
-		StarManager();
+		StarManager(const GameAssets& assets);
 
 		void update(float deltaTime, 
-			const GameAssets& assets, 
 			const WorldBounds& bounds);
 		void draw(Renderer& renderer) const;
 		
@@ -25,13 +25,13 @@ class StarManager
 
 	private:
 		std::vector<Star> stars;
+		const sf::Texture starTexture;
 
 		float respawnTimer;
 		float elapsedTime;
 
 		void updateStars(float deltaTime);
-		void spawnStars(float deltaTime, 
-			const GameAssets& assets,
+		void spawnStars(float deltaTime,
 			const WorldBounds& bounds);
 		int getRandomStarCount() const;
 };

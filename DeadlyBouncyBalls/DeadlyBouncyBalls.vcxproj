@@ -200,7 +200,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\pvat2\source\Personal Projects\Deadly Bouncy Balls\DeadlyBouncyBalls_Game\DeadlyBouncyBalls\src;C:\Users\pvat2\source\Personal Projects\SFML-3.0.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pvat2\source\Personal Projects\Deadly Bouncy Balls\Deadly_Bouncy_Balls\DeadlyBouncyBalls\src;C:\Users\pvat2\source\Personal Projects\SFML-3.0.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -222,7 +222,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\pvat2\source\Personal Projects\Deadly Bouncy Balls\DeadlyBouncyBalls_Game\DeadlyBouncyBalls\src;C:\Users\pvat2\source\Personal Projects\SFML-3.0.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pvat2\source\Personal Projects\Deadly Bouncy Balls\Deadly_Bouncy_Balls\DeadlyBouncyBalls\src;C:\Users\pvat2\source\Personal Projects\SFML-3.0.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

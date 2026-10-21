@@ -47,6 +47,11 @@ void AnimatedSprite::setPosition(const sf::Vector2f& position)
 	sprite.setPosition(position);
 }
 
+void AnimatedSprite::setRotation(float degree)
+{
+	sprite.setRotation(sf::degrees(degree));
+}
+
 void AnimatedSprite::setScale(const sf::Vector2f& scale)
 {
 	sprite.setScale(scale);

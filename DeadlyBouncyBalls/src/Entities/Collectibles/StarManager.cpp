@@ -1,10 +1,13 @@
 #include "Config/GameConfig.h"
+#include "Core/Assets/GameAssets.h"
 #include "Core/Rendering/Renderer.h"
 #include "Core/World/WorldBounds.h"
 #include "Entities/Collectibles/StarManager.h"
 #include "Utilities/Random/RandomUtils.h"
 
-StarManager::StarManager() : elapsedTime(0.f)
+StarManager::StarManager(const GameAssets& assets) :
+	starTexture(assets.getTexture(TextureId::STAR_TEXTURE)),
+	elapsedTime(0.f)
 {
 	respawnTimer = RandomUtils::randomFloat(
 		Config::Star::MIN_SPAWN_TIME,
@@ -14,12 +17,11 @@ StarManager::StarManager() : elapsedTime(0.f)
 
 void StarManager::update(
 	float deltaTime, 
-	const GameAssets& assets, 
 	const WorldBounds& bounds)
 {
 	elapsedTime += deltaTime;
 	updateStars(deltaTime);
-	spawnStars(deltaTime, assets, bounds);
+	spawnStars(deltaTime, bounds);
 }
 
 void StarManager::draw(Renderer& renderer) const
@@ -59,7 +61,6 @@ void StarManager::updateStars(float deltaTime)
 
 void StarManager::spawnStars(
 	float deltaTime,
-	const GameAssets& assets, 
 	const WorldBounds& bounds)
 {
 	int starCount = getRandomStarCount();
@@ -73,7 +74,7 @@ void StarManager::spawnStars(
 			int spawnCount = starCount - starsSize;
 			for (int i = 0; i < spawnCount; ++i)
 			{
-				stars.emplace_back(assets, bounds);
+				stars.emplace_back(starTexture, bounds);
 			}
 			respawnTimer = RandomUtils::randomFloat(
 				Config::Star::MIN_SPAWN_TIME,
@@ -86,6 +87,6 @@ void StarManager::spawnStars(
 int StarManager::getRandomStarCount() const
 {
 	if (elapsedTime >= Config::Star::MULTI_SPAWN_TIME)
-		return RandomUtils::randomInt(1, 2);
+		return RandomUtils::randomInt(Config::Star::MULTI_SPAWN_MIN, Config::Star::MULTI_SPAWN_MAX);
 	return 1;
 }

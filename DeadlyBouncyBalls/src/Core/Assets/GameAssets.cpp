@@ -6,7 +6,7 @@ void GameAssets::load()
 		throw std::runtime_error("Failed to load font!");
 	
 	if (!playerTexture.loadFromFile(
-		"assets/PNG/Player/player_sprite.png"))
+		"assets/PNG/Player/player_white_frame_sprite.png"))
 		throw std::runtime_error("Failed to load player texture!");
 
 	if (!crosshairTexture.loadFromFile(
@@ -14,7 +14,7 @@ void GameAssets::load()
 		throw std::runtime_error("Failed to load aiming icon texture!");
 
 	if (!bulletTexture.loadFromFile(
-		"assets/PNG/Icons/bullet_sprite.png"))
+		"assets/PNG/Icons/bullet_spritesheet.png"))
 		throw std::runtime_error("Failed to load bullet icon texture!");
 
 	if (!starTexture.loadFromFile(

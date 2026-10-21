@@ -25,9 +25,6 @@
     <Filter Include="Entities\Player">
       <UniqueIdentifier>{43a7f531-345b-42f7-b276-915956a03d80}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Entities\Enemies">
-      <UniqueIdentifier>{8f5effa5-1485-4cb2-9067-893f0ea1fa1d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Entities\Projectiles">
       <UniqueIdentifier>{16ce9182-ac93-4047-b25b-27f6a1ac881a}</UniqueIdentifier>
     </Filter>
@@ -121,6 +118,9 @@
     <Filter Include="Entities\Collectibles">
       <UniqueIdentifier>{dcf58ce1-7bf4-4e1c-8649-fcd2747adb15}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Entities\Enemy">
+      <UniqueIdentifier>{8f5effa5-1485-4cb2-9067-893f0ea1fa1d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\main.cpp">
@@ -130,10 +130,10 @@
       <Filter>Entities\Player</Filter>
     </ClCompile>
     <ClCompile Include="src\Entities\Enemies\Ball.cpp">
-      <Filter>Entities\Enemies</Filter>
+      <Filter>Entities\Enemy</Filter>
     </ClCompile>
     <ClCompile Include="src\Entities\Enemies\BallManager.cpp">
-      <Filter>Entities\Enemies</Filter>
+      <Filter>Entities\Enemy</Filter>
     </ClCompile>
     <ClCompile Include="src\Entities\Projectiles\Bullet.cpp">
       <Filter>Entities\Projectiles</Filter>
@@ -225,10 +225,10 @@
       <Filter>Entities\Player</Filter>
     </ClInclude>
     <ClInclude Include="src\Entities\Enemies\Ball.h">
-      <Filter>Entities\Enemies</Filter>
+      <Filter>Entities\Enemy</Filter>
     </ClInclude>
     <ClInclude Include="src\Entities\Enemies\BallManager.h">
-      <Filter>Entities\Enemies</Filter>
+      <Filter>Entities\Enemy</Filter>
     </ClInclude>
     <ClInclude Include="src\Overlays\Overlay.h">
       <Filter>Overlays</Filter>

@@ -6,10 +6,10 @@
 #include "Utilities/Random/RandomUtils.h"
 
 Star::Star(
-	const GameAssets& assets,
+	const sf::Texture& starTexture,
 	const WorldBounds& worldBounds) :
 	star(
-		assets.getTexture(TextureId::STAR_TEXTURE),
+		starTexture,
 		Config::Star::ROW,
 		Config::Star::FRAME_SIZE,
 		Config::Star::FRAME_COUNT,

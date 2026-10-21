@@ -14,7 +14,7 @@ GameWorld::GameWorld(
 	player(assets, worldBounds),
 	ballManager(worldBounds),
 	bulletManager(assets),
-	starManager(),
+	starManager(assets),
 	combatSystem(eventBus),
 	score(0),
 	gameOver(false) 
@@ -63,7 +63,7 @@ void GameWorld::update(
 	ballManager.update(deltaTime);
 	boundarySystem.apply(ballManager, worldBounds);
 
-	starManager.update(deltaTime, assets, worldBounds);
+	starManager.update(deltaTime, worldBounds);
 
 	combatSystem.update(
 		player,

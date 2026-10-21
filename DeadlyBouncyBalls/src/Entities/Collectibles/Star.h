@@ -3,6 +3,7 @@
 
 #include "Utilities/Animation/AnimatedSprite.h"
 
+#include <SFML/Graphics/Texture.hpp>
 #include <SFML/System/Vector2.hpp>
 #include <SFML/Graphics/Rect.hpp>
 
@@ -13,7 +14,7 @@ class WorldBounds;
 class Star
 {
 	public:
-		Star(const GameAssets& assets, 
+		Star(const sf::Texture& starTexture,
 			const WorldBounds& worldBounds);
 
 		void update(float deltaTime);

@@ -10,7 +10,13 @@ Bullet::Bullet(
 	const sf::Vector2f& startPosition,
 	const sf::Vector2f& direction,
 	float speed, float lifespan) :
-	bullet(bulletTexture),
+	bullet(
+		bulletTexture,
+		Config::Bullet::ROW,
+		Config::Bullet::FRAME_SIZE,
+		Config::Bullet::FRAME_COUNT,
+		Config::Bullet::FRAME_DURATION
+	),
 	position(startPosition),
 	lifespan(lifespan), 
 	age(0.0f)
@@ -40,7 +46,7 @@ Bullet::Bullet(
 		atan2(direction.y, direction.x) * 
 		Config::Math::RADIAN_TO_DEGREE;
 
-	bullet.setRotation(sf::degrees(rotationAngle));
+	bullet.setRotation(rotationAngle);
 }
 
 void Bullet::update(float deltaTime)
@@ -59,10 +65,10 @@ sf::FloatRect Bullet::getCollisionBounds() const
 {
 	float shrunkWidth =
 		collisionBoxSize.x
-		* (1.f - Config::Player::SHRINK_FACTOR * 2.f);
+		* (1.f - Config::Bullet::SHRINK_FACTOR * 2.f);
 	float shrunkHeight =
 		collisionBoxSize.y
-		* (1.f - Config::Player::SHRINK_FACTOR * 2.f);
+		* (1.f - Config::Bullet::SHRINK_FACTOR * 2.f);
 
 	return sf::FloatRect(
 		{ position.x - shrunkWidth / 2.f,

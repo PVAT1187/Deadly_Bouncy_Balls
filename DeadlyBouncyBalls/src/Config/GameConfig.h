@@ -8,7 +8,7 @@ namespace Config
 {
 	namespace Player
 	{
-		constexpr float SCALE = 0.3f;
+		constexpr float SCALE = 1.5f;
 		constexpr float SPEED = 650.f;
 
 		constexpr float ROTATION_OFFSET = 90.f;
@@ -43,10 +43,17 @@ namespace Config
 
 	namespace Bullet
 	{
-		constexpr float SCALE = 0.05f;
+		constexpr float SCALE = 1.5f;
 		constexpr float SPEED = 1500.f;
 		constexpr float LIFESPAN = 1.f;
 		constexpr float SHRINK_FACTOR = 0.2f;
+
+		constexpr int ROW = 0;
+
+		constexpr sf::Vector2i FRAME_SIZE = { 64, 32 };
+		constexpr int FRAME_COUNT = 5;
+
+		constexpr float FRAME_DURATION = 0.25f;
 	}
 
 	namespace Star
@@ -58,6 +65,8 @@ namespace Config
 		constexpr float MAX_SPAWN_TIME = 20.f;
 
 		constexpr float MULTI_SPAWN_TIME = 20.f;
+		constexpr int  MULTI_SPAWN_MIN = 1;
+		constexpr int MULTI_SPAWN_MAX = 2;
 
 		constexpr float SHRINK_FACTOR = 0.25f;
 		constexpr float LIFESPAN = 7.f;

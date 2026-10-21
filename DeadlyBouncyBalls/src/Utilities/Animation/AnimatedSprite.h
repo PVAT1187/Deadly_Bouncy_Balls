@@ -22,6 +22,7 @@ class AnimatedSprite : public sf::Drawable
 		void update(float deltaTime);
 
 		void setPosition(const sf::Vector2f& position);
+		void setRotation(float degree);
 		void setScale(const sf::Vector2f& scale); 
 		void setOrigin(const sf::Vector2f& origin);
 
